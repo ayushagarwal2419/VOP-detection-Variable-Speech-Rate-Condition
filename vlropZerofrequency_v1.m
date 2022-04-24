@@ -2,10 +2,8 @@
 function[ y2,zffo, gclocssp1]= vlropZerofrequency_v1(out1,winsize,fs,Gd,Speech_Rate)
 %%-----------------------------------------------------------
 
-%[zffo,gclocssp1,epssp1,f0sp1]=svlzfsig2(out1,fs,winsize);
-r = 0.98;
-CutOffFreq = 80;
-[zffo,zpzbf,gci,gclocssp1]=ZPZBF(out1,fs,r,CutOffFreq);
+[zffo,gclocssp1,epssp1,f0sp1]=svlzfsig2(out1,fs,winsize);
+
 
 %[zfs,gci,ES at gci,pitch fs]=svlzfsig2(out1,fs,winlength);
 % epssp1=epssp1./(max(epssp1));
